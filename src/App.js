@@ -1,6 +1,8 @@
 import React from 'react';
 import InputSample from './InputSample';
-import InputSample3 from './InputSample3';
+import UserList from './UserList';
+
+
 
 
 function App() {
@@ -13,8 +15,8 @@ function App() {
 
   return (
     <div style={style}>
-      <InputSample/>
-      {/* <InputSample3/> */}
+      {/* <InputSample/> */}
+      <UserList />
     </div>
   );
 }
