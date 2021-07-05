@@ -1,5 +1,7 @@
 import React from 'react';
 import InputSample from './InputSample';
+import InputSample3 from './InputSample3';
+
 
 function App() {
 
@@ -11,7 +13,8 @@ function App() {
 
   return (
     <div style={style}>
-      <InputSample/>
+      {/* <InputSample/> */}
+      <InputSample3/>
     </div>
   );
 }
