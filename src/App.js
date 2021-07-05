@@ -13,8 +13,8 @@ function App() {
 
   return (
     <div style={style}>
-      {/* <InputSample/> */}
-      <InputSample3/>
+      <InputSample/>
+      {/* <InputSample3/> */}
     </div>
   );
 }
