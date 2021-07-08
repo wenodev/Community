@@ -1,6 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 function User({user, onRemove, onToggle}){
+
+    useEffect(() => {
+        console.log('set user');
+        console.log(user);
+        return () => {
+            console.log('before user');
+            console.log(user);
+        }
+    }, [user])
+
+
     return(
         <div>
             <b
