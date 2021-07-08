@@ -60,6 +60,10 @@ function App() {
     nextId.current += 1;
   }
 
+  const onRemove = id => {
+    setUsers(users.filter(user => user.id !== id));
+  }
+
   const style = {
     marginTop : 100,
     padding : 10,
@@ -70,7 +74,7 @@ function App() {
     <div style={style}>
       {/* <InputSample/> */}
       <CreateUser username={username} email={email} onChange={onChange} onCreate={onCreate} />
-      <UserList users={users}/>      
+      <UserList users={users} onRemove={onRemove} />      
     </div>
   );
 }
